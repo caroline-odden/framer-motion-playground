@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -16,6 +15,10 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+h2 {
+  max-width: 576px;
 }
 
 @keyframes logo-spin {
@@ -35,8 +38,100 @@
 
 .card {
   padding: 2em;
+  border: 2px rgb(159, 159, 159) solid;
+  border-radius: 12px;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.read-the-docs {
-  color: #888;
+.task-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.spinning-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: purple;
+}
+
+.task-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+}
+.bubble-div {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.scroll-card {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: white;
+  text-align: center;
+}
+
+.parallax-container {
+  margin-top: 56px;
+  margin-bottom: 56px;
+  display: grid;
+  grid-template-columns: fit-content(10%) 288px;
+  place-content: center;
+  gap: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.parallax-title {
+  grid-column: span 2 / span 2;
+  text-align: center;
+  place-self: center;
+}
+
+.parallax-image-wrapper {
+  z-index: -1;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.links-two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+/* h-fit rounded-sm bg-sky-lightest px-1 sm:px-3 sm:py-1.5 */
+
+.workshop-box {
+  height: fit-content;
+  border-radius: 3px;
+  background-color: #e8e8e8;
+  border: 1px solid black;
+  color: black;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  line-height: 0;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
